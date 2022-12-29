@@ -1,11 +1,8 @@
 Comandos Principales
 
 pwd nos muestra el path o ruta de la carpeta en donde nos encontramos ubicados
-
 cd me permite acceder (entrar) a una carpeta en un nivel o varios niveles
-
 cd .. me permite salir de una carpeta en un nivel o varios niveles OJO los dos puntos deben ser separados por un espacio del comando cd
-
 ls me muestra los archivos que contiene una carpeta, puede ser la ubicación actual o una ruta especifica, no muestra los archivos ocultos
 ls -a me muestra los archivos que contiene una carpeta, puede ser la ubicación actual o una ruta especifica, incluyendo los archivos ocultos
 ls -l me lista los archivos que contiene una carpeta con sus atributos, puede ser la ubicación actual o una ruta especifica, no muestra los archivos ocultos
@@ -21,23 +18,37 @@ OJO en Windows el terminal no es case sensitive (Sensible las mayusculas), con L
 comandos de git aprendidos en esta clase:
 
 git init: lo usamos para determinar la carpeta en la que vamos a trabajar.
-
 git status: lo usamos para saber si tenemos un archivo añadido o borrado en nuestro proyecto, para saber en la rama en la que estamos y si tenemos commits.
-
 git add: es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el nombre de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.
-
 git rm: lo usamos para borrar un archivo que hayamos añadido, para eliminarlo por completo de nuestra rama usamosgit rm --cached.
-
 git commit: se usa para añadir un commit a nuestra rama, también podemos ponerle un -m seguidamente ponemos entre comillas nuestro ensaje.
-
 git config: muestra configuraciones de git también podemos usar –list para mostrar la configuración por defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.
-
 git config --global user.name: cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas nuestro nombre.
-
 git config --global user.email: cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
-
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.
-
 inhales again
-
 uuuuuuffff si que me costó escribir esto
+
+Comparto con ustedes por si les interesa los comandos de los que he tomado nota. junto con su descripción
+
+$ git init //inicializar el repositorio
+$ git add nombre_de_archivo.extencion //Agregar el archivo al repositorio
+$ git commit -m “Mensaje”// Agregamos los cambios para el repositorio
+$ git add .// Agregar los cambios de la carpeta en la que nos encontramos agregar todo
+$ git status // visualizar cambios
+$ git log nombre_de_archivos.extencion //historico de cambios con detalles
+$ git push //envia a otro repositorio remoto lo que estamos haciendo
+$ git pull //traer repositorio remoto
+$ ls //listado de carpetas en donde me encuentro es decir dir en windows
+$ pwd //ubicacion actual
+$ mkdir //make directori nueva carpeta
+$ touch archivo.extencion//crear archivo vacio
+$ cat archivo.extencion//muestra el contenido del archivo
+$ history //historial de comandos utilizados durante esa sesion
+$ rm archivo.extencion //eliminacion de archivo
+$ comando --help //ayuda sobre el comando
+$ checkout //traer cambios realizado
+$ git rm --cached archivo.extencion//se usa para devolver el archivo que se tiene en ram cuando escribimos git add lo devuleve a estado natural mientra esta en staging
+$ git config --list //muestra la lista de configuracion de git
+$ git config --list --show-origin//rutas de acceso a la configuración de git
+$ git log archivo.extencion //muestra la historia del archivo
